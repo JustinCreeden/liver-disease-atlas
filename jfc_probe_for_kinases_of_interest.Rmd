@@ -1,0 +1,82 @@
+# Header Start ---------------------------
+# User: Justin Creeden / justincreeden@gmail.com
+# Date created: _________________
+# Script: _______________________
+# Purpose: ______________________
+# Notes (if any): _______________
+# 
+# Important: This header is automatically generated when user creates new document. Listed user (Justin Creeden) is not nessesarily author/creator.
+# Header End ---
+
+```{r}
+##Install packages
+install.packages("tidyverse")
+install.packages("renv")
+install.packages("workflowr")
+install.packages("tidylog")
+install.packages("here")
+install.packages("Seurat")
+install.packages("UpSetR")
+install.packages("VennDiagram")
+install.packages("circlize")
+install.packages("cowplot")
+install.packages("ggpubr")
+install.packages("ggrepel")
+install.packages("ggwordcloud")
+install.packages("gridExtra")
+install.packages("gtools")
+install.packages("here")
+install.packages("janitor")
+install.packages("lemon")
+install.packages("magick")
+install.packages("openxlsx")
+install.packages("patchwork")
+install.packages("pdftools")
+install.packages("tidytext")
+install.packages("msigdbr")
+
+
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install()
+BiocManager::install("AachenColorPalette")
+BiocManager::install("ComplexHeatmap")
+BiocManager::install("GEOquery")
+BiocManager::install("GO.db")
+BiocManager::install("annotate")
+BiocManager::install("biobroom")
+BiocManager::install("biomaRt")
+BiocManager::install("dorothea")
+BiocManager::install("edgeR")
+BiocManager::install("fgsea")
+BiocManager::install("hgu133plus2.db")
+BiocManager::install("hugene11sttranscriptcluster.db")
+BiocManager::install("limma")
+BiocManager::install("mogene20sttranscriptcluster.db")
+BiocManager::install("mouse4302.db")
+BiocManager::install("oligo")
+BiocManager::install("progeny")
+
+
+
+install.packages("devtools")
+devtools::install_github("stephenturner/msigdf")
+
+
+install.packages("remotes")
+remotes::install_github("christianholland/AachenColorPalette")
+
+
+install.packages("workflowr")
+
+
+##Restore packages
+#renv::restore()
+```
+
+```{r}
+##Run all analyses
+workflowr::wflow_build(republish = TRUE)
+```
+
